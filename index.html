@@ -49,7 +49,7 @@
 
             </div>
         </div>
-    
+
         <div class="imgs-container">
             <p>Abra seu presente</p>
             <button id="btn">
@@ -120,14 +120,20 @@
 
         const btn = document.getElementById('btn');
         const confetti = new JSConfetti();
+      
         btn.addEventListener('click', () => {
-            confetti.addConfetti();
+            confetti.addConfetti({
+            emojis: ['❤️', '💝', '❤️', '💝', '❤️', '💝'],
+        })
+
         });
 
         btn.onclick = function () {
             document.querySelector('.container').style.display = 'none';
             document.querySelector('.container_2').style.display = 'block';
         }
+
+
 
     </script>
 </body>
