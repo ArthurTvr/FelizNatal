@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz Natal!</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="title-container">
+            <h1>Feliz Natal!</h1>
+            <img src="./assets/gif.gif" alt="">
+        </div>
+
+        <div class="container-carta">
+            <div class="greeting">
+                <p>Oi, meu amor! Nosso primeiro Natal juntinhos em em em</p>
+                <p>Desejo a você muita paz, muita luz, muito amor, muito carinho, enfim desejo pra você
+                    tudo de melhor nesse mundo!</p>
+
+                <p>VOCÊ sem sombra de dúvidas é a melhor coisa que já ganhei na vida, o meu melhor presente!
+                    Uma certa cantora aí disse "Darling, you're the one I want" e é a mais pura verdade. Você é quem eu
+                    quero minha Yasmin, nunca se esqueça disso.</p>
+
+                <p>Você, é minha paz, você é a pessoa que eu confio de olhos fechados a pessoa que eu quero construir
+                    uma
+                    família,
+                    a pessoa que eu quero viver junto pra sempre e compartilhar todos os momentos com você! Como diz uma
+                    certa música "I
+                    like shiny things, but I'd marry you with <span id="rings">PAPER RINGS</span>". Para mim, você é
+                    mais
+                    valiosa do que qualquer coisa no mundo.
+                </p>
+                <p>Você é especial demais minha vida, você me faz sentir amado, querido, especial e eu nem sei como te
+                    agradeço por isso. Eu sou completamente apaixonado por você, e novamente parafraseando uma cantora
+                    bem
+                    famosa "Eu quero que você use <span id="colar">MINHA INICIAL</span> em uma corrente em volta do seu
+                    pescoço", eu quero que todos saibam o quanto eu amo você e o quanto você faz feliz. </p>
+                <p>Como Já disse ter
+                    você é o melhor presente que já ganhei na vida e sem dúvidas esse será o meu melhor natal, porque
+                    estou
+                    acompanhado da melhor pessoa de todas. Eu te amo MUITO MUITO MUITO! <3 </p>
+                        <p>Acho que você já deve desconfiar do seu presente, mas pode abrir agora meu amor! ^^</p>
+
+            </div>
+        </div>
+        git config --global user.email "arthurdanilotavares@hotmail.com"
+        git config --global user.name "ArthurTvr"
+        <div class="imgs-container">
+            <p>Abra seu presente</p>
+            <button id="btn">
+                <img class="presente" src="./assets/presente.png" alt="">
+            </button>
+        </div>
+
+    </div>
+    <div class="container_2" style="display: none;">
+        <div class="container_pag_dois">
+            <div class="teste">
+                <p id="text">FELIZ NATAL!</p>
+                <p id="text">Eu te amo, meu melhor presente!</p>
+            </div>
+        </div>
+
+        <style>
+            body {
+                background-color: beige;
+                background-position: 50% 0;
+            }
+
+            .container_pag_dois {
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-image: url('./assets/WhatsApp\ Image\ 2023-12-19\ at\ 13.48.10.jpeg');
+                height: 1080px;
+                display: flex;
+                justify-content: center;
+                margin: 0 auto;
+                align-items: center;
+                text-align: center;
+                width: 600px;
+                flex-direction: column;
+            }
+
+            #pisca {
+                height: 100px;
+            }
+
+            .teste {
+
+                animation: surgir 6s;
+                background-color: rgb(255, 122, 122);
+                padding: 10px;
+            }
+
+            #text {
+                color: white;
+                font-size: 2rem;
+            }
+
+            @keyframes surgir {
+                0% {
+                    opacity: 0;
+                }
+
+                100% {
+                    opacity: 1;
+                }
+
+            }
+        </style>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script>
+    <script>
+
+        const btn = document.getElementById('btn');
+        const confetti = new JSConfetti();
+        btn.addEventListener('click', () => {
+            confetti.addConfetti();
+        });
+
+        btn.onclick = function () {
+            document.querySelector('.container').style.display = 'none';
+            document.querySelector('.container_2').style.display = 'block';
+        }
+
+    </script>
+</body>
+
+
+</html>

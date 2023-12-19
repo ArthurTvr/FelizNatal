@@ -1,0 +1,43 @@
+body {
+    background-color: beige;
+    background-position: 50% 0;
+}
+
+.container1{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('./assets/WhatsApp\ Image\ 2023-12-19\ at\ 13.48.10.jpeg');
+    height: 1080px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    align-items: center;
+    text-align: center;
+    width: 600px;
+    flex-direction: column;
+   
+}
+#pisca{
+    height: 100px;
+}
+.teste{
+
+    animation: surgir 6s;
+    background-color: rgb(255, 122, 122);
+    padding: 10px;
+}
+
+#text{
+    color: white;
+    font-size: 2rem;
+}
+
+@keyframes surgir {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+    
+}
