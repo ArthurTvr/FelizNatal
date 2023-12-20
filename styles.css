@@ -75,30 +75,14 @@ h1 {
     font-family: 'Grinched', sans-serif;
     color: rgb(255, 66, 98);
     font-weight: bold;
-    animation: aumentar-fonte 5s infinite;
+   
 }
 
 #colar {
-    animation: aumentar-fonte 5s infinite;
+   
     font-family: 'i Impian', sans-serif;
     color: rgb(255, 66, 98);
     font-weight: bold;
-}
-
-@keyframes aumentar-fonte {
-    0%{
-        font-size: 14px;
-        color: rgb(255, 66, 98);;
-    }
-    50%{
-        font-size: 15px;
-        color: rgb(252, 30, 67);
-    }
-
-    100%{
-        font-size: 14px;
-        color: rgb(255, 66, 98);
-    }
 }
 
 @keyframes mudarCor {
