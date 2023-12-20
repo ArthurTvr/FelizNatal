@@ -1,3 +1,5 @@
+@import url('https://fonts.cdnfonts.com/css/grinched');
+@import url('https://fonts.cdnfonts.com/css/i-impian');
 body {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     background-color: beige;
@@ -69,13 +71,33 @@ h1 {
 }
 
 #rings {
+    font-family: 'Grinched', sans-serif;
+    color: rgb(255, 66, 98);
+    font-weight: bold;
+    animation: aumentar-fonte 5s infinite;
+}
+
+#colar {
+    animation: aumentar-fonte 5s infinite;
+    font-family: 'i Impian', sans-serif;
     color: rgb(255, 66, 98);
     font-weight: bold;
 }
 
-#colar {
-    color: rgb(255, 66, 98);
-    font-weight: bold;
+@keyframes aumentar-fonte {
+    0%{
+        font-size: 18px;
+        color: rgb(255, 66, 98);;
+    }
+    50%{
+        font-size: 20px;
+        color: rgb(252, 30, 67);
+    }
+
+    100%{
+        font-size: 18px;
+        color: rgb(255, 66, 98);
+    }
 }
 
 @keyframes mudarCor {
@@ -137,7 +159,7 @@ h1 {
     }
 }
 
-button{
+button {
     border: none;
     background-color: beige;
 }
