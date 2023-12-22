@@ -46,7 +46,7 @@
                     você é o melhor presente que já ganhei na vida e sem dúvidas esse será o meu melhor natal, porque
                     estou
                     acompanhado da melhor pessoa de todas. Eu te amo MUITO MUITO MUITO! ❤️ </p>
-                        <p>Acho que você já deve desconfiar do seu presente, mas pode abrir agora meu amor! 🥰</p>
+                <p>Acho que você já deve desconfiar do seu presente, mas pode abrir agora meu amor! 🥰</p>
 
             </div>
         </div>
@@ -67,64 +67,76 @@
             </div>
         </div>
 
-       <button>
-           <a href="./presente.html">click</a>
-    </button>
+        <button class="button-dev">
+            <a href="./presente.html">click me!</a>
+        </button>
     </div>
-        <style>
-            body {
-                background-color: beige;
+    <style>
+        body {
+            background-color: beige;
+            background-position: 50% 0;
+        }
+
+        .container_pag_dois {
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-image: url('./assets/WhatsApp\ Image\ 2023-12-19\ at\ 13.48.10.jpeg');
+            height: 1080px;
+            display: flex;
+            justify-content: center;
+            margin: 0 auto;
+            align-items: center;
+            text-align: center;
+            max-width: 600px;
+            flex-direction: column;
+        }
+
+        #pisca {
+            height: 100px;
+        }
+
+        .teste {
+
+            animation: surgir 6s;
+            background-color: rgb(255, 122, 122);
+            padding: 10px;
+        }
+
+        #text {
+            font-family: 'Rubik Doodle Shadow';
+            color: white;
+            font-size: 2rem;
+        }
+
+        .button-dev {
+            border-radius: 20px;
+            padding: 12px;
+            margin-top: 20px;
+            background-color: rgb(239, 196, 239);
+        }
+
+        .button-dev a {
+            text-decoration: none;
+        }
+
+        @keyframes surgir {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+
+        }
+
+
+        @media only screen and (max-width: 600px) {
+            .container_pag_dois {
                 background-position: 50% 0;
             }
-
-            .container_pag_dois {
-                background-repeat: no-repeat;
-                background-size: cover;
-                background-image: url('./assets/WhatsApp\ Image\ 2023-12-19\ at\ 13.48.10.jpeg');
-                height: 1080px;
-                display: flex;
-                justify-content: center;
-                margin: 0 auto;
-                align-items: center;
-                text-align: center;
-                max-width: 600px;
-                flex-direction: column;
-            }
-
-            #pisca {
-                height: 100px;
-            }
-
-            .teste {
-                
-                animation: surgir 6s;
-                background-color: rgb(255, 122, 122);
-                padding: 10px;
-            }
-
-            #text {
-                font-family: 'Rubik Doodle Shadow';
-                color: white;
-                font-size: 2rem;
-            }
-
-            @keyframes surgir {
-                0% {
-                    opacity: 0;
-                }
-
-                100% {
-                    opacity: 1;
-                }
-
-            }
-
-            @media only screen and (max-width: 600px) {
-        .container_pag_dois {
-        background-position: 50% 0;
-    }
-}
-        </style>
+        }
+    </style>
 
 
     <script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script>
@@ -132,11 +144,11 @@
 
         const btn = document.getElementById('btn');
         const confetti = new JSConfetti();
-      
+
         btn.addEventListener('click', () => {
             confetti.addConfetti({
-            emojis: ['❤️', '💕', '❤️', '🎁', '❤️', '💝'],
-        })
+                emojis: ['❤️', '💕', '❤️', '🎁', '❤️', '💝'],
+            })
 
         });
 
