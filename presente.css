@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -20,7 +20,7 @@ body {
     margin: 20px;
     overflow: hidden;
     width: 100%;
-
+    font-family: cursive;
     max-width: 600px;
 
     transition: transform 0.3s ease-in-out;
@@ -61,4 +61,5 @@ h1 {
     color: white;
     font-size: 2em;
     margin-bottom: 20px;
+    font-family: cursive;
   }
