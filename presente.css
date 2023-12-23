@@ -42,10 +42,11 @@ body {
 .card p {
     padding: 15px;
     margin: 0;
+    font-size:  2em;
 }
 
 .card h3 {
-    font-size: 1.5em;
+    font-size: 2.5em;
     color: white;
 }
 
